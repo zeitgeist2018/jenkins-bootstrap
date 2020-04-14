@@ -12,8 +12,8 @@ JOBS = [
         ]
 ]
 
-
-JOBS.each{ projectKey, projectJobs ->
+println JOBS
+/*JOBS.each{ projectKey, projectJobs ->
     folder("$BASE_FOLDER/$projectKey") {}
 
     projectJobs.each{ jobKey, jobRepository ->
@@ -37,4 +37,4 @@ JOBS.each{ projectKey, projectJobs ->
         }
     }
 }
-
+*/
