@@ -3,10 +3,10 @@ def BASE_FOLDER = 'infrastructure-build'
 def NUM_TO_KEEP = 2
 
 folder(BASE_FOLDER) {}
-
+println env
 JOBS = [
         "test": [
-                "jenkins-dummy": "${env.GIT_URL}/infrastructure-build/jenkins-dummy.git"
+                "jenkins-dummy": "${env['GIT_URL']}/infrastructure-build/jenkins-dummy.git"
         ]
 ]
 
