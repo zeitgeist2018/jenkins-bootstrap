@@ -1,14 +1,12 @@
-//import static Constants.GIT_CREDENTIALS
-
-def GIT_CREDENTIALS = 'gitlab'
-def BASE_FOLDER = 'test'
+//def GIT_CREDENTIALS = 'gitlab'
+def BASE_FOLDER = 'infrastructure-build'
 def NUM_TO_KEEP = 2
 
 folder(BASE_FOLDER) {}
 
 JOBS = [
-        "common": [
-                "jenkins-dummy": 'http://192.168.1.128:8082/cristianlm/jenkins-dummy.git'
+        "test": [
+                "jenkins-dummy": "${env.GIT_URL}/infrastructure-build/jenkins-dummy.git"
         ]
 ]
 
