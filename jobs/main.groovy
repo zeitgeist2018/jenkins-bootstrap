@@ -28,9 +28,8 @@ JOBS.each{ projectKey, projectJobs ->
                     daysToKeep(NUM_TO_KEEP)
                 }
             }
-            triggers {
-                cron('*/30 * * * *')
-            }
         }
     }
 }
+
+setBuildResult('SUCCESS')
