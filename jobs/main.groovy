@@ -1,4 +1,4 @@
-//import static constants.Constants.GIT_CREDENTIALS
+//import static Constants.GIT_CREDENTIALS
 
 def GIT_CREDENTIALS = 'gitlab'
 def BASE_FOLDER = 'test'
@@ -19,9 +19,9 @@ JOBS.each{ projectKey, projectJobs ->
         multibranchPipelineJob("$BASE_FOLDER/$projectKey/$jobKey") {
             branchSources {
                 git {
-                    #id("$BASE_FOLDER.$projectKey.$jobKey")
+                    id("$BASE_FOLDER.$projectKey.$jobKey")
                     remote(jobRepository)
-                    #credentialsId GIT_CREDENTIALS
+//                    credentialsId GIT_CREDENTIALS
                     includes('master feature/*')
                 }
             }
