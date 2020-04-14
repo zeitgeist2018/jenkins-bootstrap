@@ -20,7 +20,7 @@ JOBS.each{ projectKey, projectJobs ->
         multibranchPipelineJob("$BASE_FOLDER/$projectKey/$jobKey") {
             branchSources {
                 git {
-                    id("$BASE_FOLDER.$projectKey.$jobKey")
+                    #id("$BASE_FOLDER.$projectKey.$jobKey")
                     remote(jobRepository)
                     #credentialsId GIT_CREDENTIALS
                     includes('master feature/*')
