@@ -6,6 +6,9 @@ folder(BASE_FOLDER) {}
 JOBS = [
         "test": [
                 "jenkins-dummy": "infrastructure-build/jenkins-dummy.git"
+        ],
+        "plugins": [
+                "gradle-plugin": "infrastructure-build/gradle-plugin.git"
         ]
 ]
 
