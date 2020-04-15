@@ -1,6 +1,6 @@
 //def GIT_CREDENTIALS = 'gitlab'
 def BASE_FOLDER = 'infrastructure-build'
-def NUM_TO_KEEP = 2
+def NUM_TO_KEEP = 1
 
 folder(BASE_FOLDER) {}
 JOBS = [
@@ -31,4 +31,4 @@ JOBS.each { projectKey, projectJobs ->
     }
 }
 
-currentBuild.result = 'SUCCESS'
+//setBuildResult('SUCCESS')
