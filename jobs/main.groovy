@@ -33,5 +33,3 @@ JOBS.each { projectKey, projectJobs ->
         }
     }
 }
-
-//setBuildResult('SUCCESS')
